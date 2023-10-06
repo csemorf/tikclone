@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAuohXAubMKI22b0zIog-dkILpqU1S18yE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1082160677561</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.csemorf.tiktokclone</string>
+	<key>PROJECT_ID</key>
+	<string>tiktokclone-ff164</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tiktokclone-ff164.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1082160677561:ios:b28af991f93fd08192d168</string>
+	<key>DATABASE_URL</key>
+	<string>https://tiktokclone-ff164-default-rtdb.firebaseio.com/</string>
+</dict>
+</plist>

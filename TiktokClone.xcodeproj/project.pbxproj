@@ -20,6 +20,8 @@
 		CDEF4D092ACFAC86006BE49E /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF4D082ACFAC86006BE49E /* UserApi.swift */; };
 		CDEF4D0B2ACFB82C006BE49E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF4D0A2ACFB82C006BE49E /* StorageService.swift */; };
 		CDEF4D0D2ACFBE44006BE49E /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF4D0C2ACFBE44006BE49E /* Ref.swift */; };
+		CDEF4D0F2AD11475006BE49E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF4D0E2AD11475006BE49E /* ProfileViewController.swift */; };
+		CDEF4D112AD118EA006BE49E /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF4D102AD118EA006BE49E /* CreatePostViewController.swift */; };
 		FD5999B0FE748625DB3389E3 /* Pods_TiktokClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75146C9189E57A35C0906979 /* Pods_TiktokClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		CDEF4D082ACFAC86006BE49E /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		CDEF4D0A2ACFB82C006BE49E /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		CDEF4D0C2ACFBE44006BE49E /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		CDEF4D0E2AD11475006BE49E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CDEF4D102AD118EA006BE49E /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +96,11 @@
 				CD3173E62ACB315300E4CA46 /* ViewController.swift */,
 				CD1267F32ACCF9B5002E0FBD /* SignUpViewController.swift */,
 				CD1267F52ACCFDD8002E0FBD /* SignInViewController.swift */,
+				CDEF4D102AD118EA006BE49E /* CreatePostViewController.swift */,
 				CDEF4D062ACFAC7B006BE49E /* Api.swift */,
 				CDEF4D082ACFAC86006BE49E /* UserApi.swift */,
 				CDEF4D0C2ACFBE44006BE49E /* Ref.swift */,
+				CDEF4D0E2AD11475006BE49E /* ProfileViewController.swift */,
 				CDEF4D0A2ACFB82C006BE49E /* StorageService.swift */,
 				CD3173E82ACB315300E4CA46 /* Main.storyboard */,
 				CD3173EB2ACB315500E4CA46 /* Assets.xcassets */,
@@ -230,10 +236,12 @@
 			files = (
 				CDEF4D072ACFAC7B006BE49E /* Api.swift in Sources */,
 				CD3173E72ACB315300E4CA46 /* ViewController.swift in Sources */,
+				CDEF4D0F2AD11475006BE49E /* ProfileViewController.swift in Sources */,
 				CD3173E32ACB315300E4CA46 /* AppDelegate.swift in Sources */,
 				CD1267F42ACCF9B5002E0FBD /* SignUpViewController.swift in Sources */,
 				CD1267F62ACCFDD9002E0FBD /* SignInViewController.swift in Sources */,
 				CDEF4D0B2ACFB82C006BE49E /* StorageService.swift in Sources */,
+				CDEF4D112AD118EA006BE49E /* CreatePostViewController.swift in Sources */,
 				CDEF4D092ACFAC86006BE49E /* UserApi.swift in Sources */,
 				CD3173E52ACB315300E4CA46 /* SceneDelegate.swift in Sources */,
 				CDEF4D0D2ACFBE44006BE49E /* Ref.swift in Sources */,
@@ -314,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -371,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -389,6 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W4UVP72L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TiktokClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -396,6 +405,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W4UVP72L9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TiktokClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -424,6 +435,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

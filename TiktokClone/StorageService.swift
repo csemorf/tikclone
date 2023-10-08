@@ -13,7 +13,9 @@ import FirebaseStorage
 import ProgressHUD
 
 class StorageService {
-    static func savePhoto(username:String,uid:String,data:Data, metadata:StorageMetadata, storageProfileRef:StorageReference,dict:Dictionary<String,Any>,onSuccess:@escaping()->Void,onError:@escaping(_ errorMessage:String)->Void) {
+    static func savePhoto(username:String,uid:String,data:Data, metadata:StorageMetadata, storageProfileRef:StorageReference,
+                          dict:Dictionary<String,Any>,
+                          onSuccess:@escaping()->Void, onError:@escaping(_ errorMessage:String)->Void) {
         
         storageProfileRef.putData(data, metadata: metadata) { data, err in
             if err != nil {
@@ -24,7 +26,7 @@ class StorageService {
             storageProfileRef.downloadURL { url, err in
                 
                 if let metaImageUrl = url?.absoluteString  {
-                    
+                  
                     if let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest() {
                         changeRequest.displayName = username
                         changeRequest.photoURL = url

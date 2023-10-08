@@ -20,6 +20,9 @@ let USERNAME = "username"
 let REF_USER = "users"
 let URL_STORAGE_ROOT = "gs://tiktokclone-ff164.appspot.com"
 let STORAGE_PROFILE = "profile"
+let IDENTIFIER_MAIN = "MainVC"
+let IDENTIFIER_TABBAR = "TabbarVC"
+
 
 class Ref {
     

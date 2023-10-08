@@ -62,11 +62,26 @@ class UserApi {
                 } onError: { errorMessage in
                     onError(errorMessage)
                 }
-
-                
+              
                 
                 
             }
         }
+    }
+    func logout() {
+        do {
+        try    Auth.auth().signOut()
+            
+            let scene =  UIApplication.shared.connectedScenes.first
+            if let sceneDelegate = (scene?.delegate as? SceneDelegate) {
+                sceneDelegate.setupInitialViewController()
+            }
+        }catch {
+            ProgressHUD.showError(error.localizedDescription)
+            return
+        }
+        
+        
+        
     }
 }

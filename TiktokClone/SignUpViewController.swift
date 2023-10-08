@@ -41,7 +41,11 @@ class SignUpViewController: UIViewController {
     @IBAction func signUpDidTapped(_ sender: Any) {
         validateFields()
         signUp {
-//            switch view
+            let scene =  UIApplication.shared.connectedScenes.first
+            if let sceneDelegate = (scene?.delegate as? SceneDelegate) {
+                sceneDelegate.setupInitialViewController()
+            }
+
         } onError: { errorMessage in
             ProgressHUD.showError(errorMessage)
         }
@@ -125,7 +129,7 @@ extension SignUpViewController: PHPickerViewControllerDelegate {
 }
 extension SignUpViewController {
     func signUp(onSuccess:@escaping()->Void,onError:@escaping(_ errorMessage:String)->Void) {
-        ProgressHUD.show()
+        ProgressHUD.show("Loading...")
         Api.User.signUp(with: usernameTextfield.text!, email: emailTextfield.text!, password: passwordTextfield.text!, image: self.image) {
             ProgressHUD.dismiss()
             onSuccess()

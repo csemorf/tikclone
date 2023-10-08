@@ -54,7 +54,11 @@ class SignInViewController: UIViewController {
         validateFields()
         
         signIn(email: emailTextfield.text!, password: passwordTextfield.text!) {
-//            
+                        let scene =  UIApplication.shared.connectedScenes.first
+            if let sceneDelegate = (scene?.delegate as? SceneDelegate) {
+                sceneDelegate.setupInitialViewController()
+            }
+
         } onError: { errorMessage in
             ProgressHUD.showError(errorMessage)
         }
@@ -81,7 +85,7 @@ class SignInViewController: UIViewController {
 extension SignInViewController {
     func signIn(email:String,password:String,onSuccess:@escaping()->Void,onError:@escaping(_ errorMessage:String)->Void) {
         
-        ProgressHUD.show()
+        ProgressHUD.show("Loading...")
         self.view.endEditing(true)
         Api.User.signIn(with: emailTextfield.text!, password: passwordTextfield.text!) {
             
